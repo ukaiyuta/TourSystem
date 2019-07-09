@@ -56,7 +56,7 @@ public class FrontController extends HttpServlet
 		{
 			case "GOTO_TOP":
 			default:
-				transitionPage = "/TOP.jsp";
+				transitionPage = "/TopView.jsp";
 				request.getSession ().invalidate ();
 			break;
 		}
