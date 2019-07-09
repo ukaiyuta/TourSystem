@@ -8,5 +8,8 @@
 </head>
 <body>
 	<h1>TOP画面</h1>
+	<form action="/FrontController" method="post">
+		<button type="submit" name="targetId" value="GOTO_LOGIN">ログイン</button>
+	</form>
 </body>
 </html>
