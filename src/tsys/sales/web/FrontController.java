@@ -49,11 +49,12 @@ public class FrontController extends HttpServlet
 		request.setCharacterEncoding ( "UTF-8" );
 
 		// 目的IDを取得
-		String targetId = request.getParameter ( "targetId" );
+		String targetId = request.getParameter ( "TARGET_ID" );
 
 		// 目的IDから必要なActionを呼び出す
 		switch ( targetId )
 		{
+			case "GOTO_LOGIN":
 			case "GOTO_TOP":
 			default:
 				transitionPage = "/TopView.jsp";
